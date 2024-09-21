@@ -1,0 +1,10 @@
+<h1>Add New Bus</h1>
+ 
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Bus name:</label>
+  <input type="text" id="name" [(ngModel)]="bus.busName" name="busName" required>
+  <label for="name">Occupancy:</label>
+  <input type="text" id="occupancy" [(ngModel)]="bus.occupancy" name="occupancy" required>
+ 
+  <button type="submit">Submit</button>
+</form>
